@@ -1,0 +1,42 @@
+nohup: ignoring input
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+This machine has 1 cuda devices, and use 1 of them to train.
+Total train samples: 50000
+Total test samples: 10000
+Batch size: 128
+iteration every epoch: 390
+Initial learning rate: 0.1
+
+[2022-11-18_11:46:11] Epoch:1/60, iteration:100/390, lr: 0.1, loss: 2.0834600925445557, time: 6.5231616497039795
+
+[2022-11-18_11:46:14] Epoch:1/60, iteration:200/390, lr: 0.1, loss: 1.739802360534668, time: 3.205878496170044
+
+[2022-11-18_11:46:17] Epoch:1/60, iteration:300/390, lr: 0.1, loss: 1.6150403022766113, time: 3.159423351287842
+
+[2022-11-18_11:46:20] Epoch:2/60, iteration:9/390, lr: 0.1, loss: 1.5361255407333374, time: 3.357206106185913
+
+[2022-11-18_11:46:23] Epoch:2/60, iteration:109/390, lr: 0.1, loss: 1.5431439876556396, time: 2.9772067070007324
+
+[2022-11-18_11:46:26] Epoch:2/60, iteration:209/390, lr: 0.1, loss: 1.4663739204406738, time: 3.09106183052063
+
+[2022-11-18_11:46:30] Epoch:2/60, iteration:309/390, lr: 0.1, loss: 1.2745074033737183, time: 3.1500678062438965
+
+[2022-11-18_11:46:33] Epoch:3/60, iteration:18/390, lr: 0.1, loss: 1.2521744966506958, time: 3.350090742111206
+
+[2022-11-18_11:46:36] Epoch:3/60, iteration:118/390, lr: 0.1, loss: 1.2619543075561523, time: 3.0099122524261475
+
+[2022-11-18_11:46:39] Epoch:3/60, iteration:218/390, lr: 0.1, loss: 1.1291362047195435, time: 3.125415563583374
+
+[2022-11-18_11:46:42] Epoch:3/60, iteration:318/390, lr: 0.1, loss: 1.002699375152588, time: 3.0525500774383545
+
+[2022-11-18_11:46:45] Epoch:4/60, iteration:27/390, lr: 0.1, loss: 0.9276683330535889, time: 3.3434767723083496
+
+[2022-11-18_11:46:49] Epoch:4/60, iteration:127/390, lr: 0.1, loss: 0.8305565714836121, time: 3.1752262115478516
+
+[2022-11-18_11:46:52] Epoch:4/60, iteration:227/390, lr: 0.1, loss: 0.9856813549995422, time: 3.171705722808838
+
+[2022-11-18_11:46:55] Epoch:4/60, iteration:327/390, lr: 0.1, loss: 0.9236206412315369, time: 3.189293384552002
+
