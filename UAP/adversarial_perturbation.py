@@ -16,7 +16,7 @@ def project_perturbation(data_point, p, perturbation):
     return perturbation
 
 
-def generate(trainset, testset, net, delta=0.5, max_iter_uni=np.inf, xi=10, p=np.inf, num_classes=10, overshoot=0.2, max_iter_df=20):
+def generate(trainset, testset, net, delta=0.5, max_iter_uni=np.inf, xi=10, p=np.inf, num_classes=10, overshoot=0.2, max_iter_df=20, target_label=0):
     '''
     :param trainset: Pytorch Dataloader with train data
     :param testset: Pytorch Dataloader with test data
@@ -78,11 +78,11 @@ def generate(trainset, testset, net, delta=0.5, max_iter_uni=np.inf, xi=10, p=np
             torch.cuda.empty_cache()
 
             # If the label of both images is the same, the perturbation v needs to be updated
-            if r1 == r2:
-                print(">> k =", np.where(index==index_order)[0][0], ', pass #', iter_count, end='      ')
+            if r1 != target_label:
+                print(">> k =", np.where(index==index_order)[0][0], ', pass #', iter_count)
 
                 # Finding a new minimal perturbation with deepfool to fool the network on this image
-                dr, iter_k, label, k_i, pert_image = deepfool.deepfool(per_img[0], net, num_classes=num_classes, overshoot=overshoot, max_iter=max_iter_df)
+                dr, iter_k, label, k_i, pert_image = deepfool.deepfool(per_img[0], net, num_classes=num_classes, overshoot=overshoot, max_iter=max_iter_df, target_label=target_label)
 
                 # Adding the new perturbation found and projecting the perturbation v and data point xi on p.
                 if iter_k < max_iter_df-1:
